@@ -28,6 +28,7 @@
             gap: 20px;
             width: 100%;
             max-width: 1200px;
+            margin-left: 50px;
         }
 
         /* Sidebar styling */
@@ -420,7 +421,7 @@
                     <a href="/mycity-homepage"><span>Home</span></a>
                 </li>
                 <li class="nav_link">
-                    <a href="/entertainment"><span>Entertainment</span></a>
+                    <a href="/Entertainment/home"><span>Entertainment</span></a>
                 </li>
                 <li class="nav_link active">
                     <a href="/homePage"><span>Shopping</span></a>
@@ -495,9 +496,9 @@
         </div>
     </div>
 
-    <div class="container-category">
+    <div class="container-category" >
         <!-- Left Sidebar -->
-        <div class="sidebar">
+        <div class="sidebar" style="margin-left: 25px;">
             <!-- Categories Section -->
             <h2>Category</h2>
             <div class="list">
@@ -514,7 +515,7 @@
                     <h3 onclick="toggleList('women-list')">Women <span>+</span></h3>
                     <ul id="women-list">
                         <a href="/womens-sarees"><li>Sarees</li></a>
-                        <a href="/womens-chudidhars"><li>Kurta Sets</li></a>
+                        <a href="/womens-kurta-set"><li>Kurta Sets</li></a>
                         <a href="/womens-tops"><li>Tops</li></a>
                         <a href="/womens-jeans"><li>Jeans</li></a>
                     </ul>
@@ -524,7 +525,7 @@
                     <ul id="Kids">
                         <a href="/frocks"><li>Frocks</li></a>
                         <a href="/rompers"><li>Rompers</li></a>
-                        <a href="/blankets"><li>Blankets</li></a>
+                        <a href="/kids-blankets"><li>Blankets</li></a>
                         <a href="/kids-footwear"><li>Footwear</li></a>
                         <a href="/toys"><li>Toys</li></a>
                     </ul>
@@ -535,6 +536,8 @@
                     </h3>
                     <ul id="Footwear-list">
                         <a href="/mens-footwear"><li>Men Footwear</li></a>
+                        <a href="/womens-footwear"><li>Women Footwear</li></a>
+                        <a href="/kids-footwear"><li>Kids footwear</li></a>
                     </ul>
                 </div>
                 <div class="list-items">
@@ -617,267 +620,12 @@
             </div>
         </div>
 
-        <!-- Right Product Container -->
-
-        <!-- Product Card 1 -->
-        <!-- <div class="product-grid" id="productGrid">
-            <div class="product-card" data-price="1649" data-rating="4.5" data-display="full" data-discount="50">
-                <div class="icons">
-                    <button class="favorite-button" id="favoriteButton1">&#9825;</button>                     
-                    <a href="#" title="Add to Cart">&#128722;</a>
-                </div>
-                <a href="/uspolo.html">
-                    <img src="/shirtimages/uspasoftoxford1.webp" alt="Samsung Smartwatch" />
-                    <p class="product-name">US POLO Slim shirt</p>
-                    <p class="product-price">
-                        ₹1649 <span class="discount-price">₹2,499</span>
-                    </p>
-                    <p class="product-rating">Rating: 3.5</p>
-                    <p class="product-display">Display: full</p>
-                </a>
-            </div>
-            <div class="product-card" data-price="999" data-rating="4" data-display="anarkali" data-discount="40">
-                <div class="icons">
-                    <button class="favorite-button" id="favoriteButton1">&#9825;</button>                     
-                    <a href="#" title="Add to Cart">&#128722;</a>
-                </div>
-                <a href="/red.html">
-                    <img src="/kurthaimages/red1.1.jpg" alt="Samsung Smartwatch" />
-                    <p class="product-name">RED KURTHA</p>
-                    <p class="product-price">
-                        ₹999 <span class="discount-price">₹3,099</span>
-                    </p>
-                    <p class="product-rating">Rating: 4.0</p>
-                    <p class="product-display">anarkali</p>
-                </a>
-            </div>
-
-            <div class="product-card" data-price="999" data-rating="4.5" data-display="full" data-discount="40">
-                <div class="icons">
-                    <button class="favorite-button" id="favoriteButton1">&#9825;</button>                     
-                    <a href="#" title="Add to Cart">&#128722;</a>
-                </div>
-                <a href="/ketch.html">
-                    <img src="/shirtimages/ketch1.1.webp" alt="Samsung Smartwatch" />
-                    <p class="product-name">ketch shirt</p>
-                    <p class="product-price">
-                        ₹999 <span class="discount-price">₹3,099</span>
-                    </p>
-                    <p class="product-rating">Rating: 3.8</p>
-                    <p class="product-display">Display: full hands</p>
-                </a>
-            </div>
-
-            <div class="product-card" data-price="1943" data-rating="3.5" data-display="formals" data-discount="50">
-                <div class="icons">
-                    <button class="favorite-button" id="favoriteButton1">&#9825;</button>                     
-                    <a href="#" title="Add to Cart">&#128722;</a>
-                </div>
-                <a href="/tones.html">
-                    <img src="/shirtimages/tones3.1.webp" alt="Samsung Smartwatch" />
-                    <p class="product-name">Tones shirt</p>
-                    <p class="product-price">
-                        ₹1,943 <span class="discount-price">₹2,990</span>
-                    </p>
-                    <p class="product-rating">Rating: 3.8</p>
-                    <p class="product-display">Display: Formal</p>
-                </a>
-            </div>
-            <div class="product-card" data-price="199" data-rating="3.2" data-display="Envelope" data-discount="50">
-                <div class="icons">
-                    <button class="favorite-button" id="favoriteButton1">&#9825;</button>                     
-                    <a href="#" title="Add to Cart">&#128722;</a>
-                </div>
-                <a href="/BSB HOME.html">
-                    <img src="/bed sheet images/BSB HOME.jpg" alt="Samsung Smartwatch" />
-                    <p class="product-name">
-                        BSB HOME 200 TC 100% Cotton Feel Bedsheet for Double Bed
-                    </p>
-                    <p class="product-price">
-                        ₹199<span class="discount-price">₹1,299</span>
-                    </p>
-                    <p class="product-rating">Rating: 3.2</p>
-                    <p class="product-display">Type : Envelope</p>
-                </a>
-            </div>
-
-            <div class="product-card" data-price="799" data-rating="3" data-display="flared" data-discount="50">
-                <div class="icons">
-                    <button class="favorite-button" id="favoriteButton1">&#9825;</button>                     
-                    <a href="#" title="Add to Cart">&#128722;</a>
-                </div>
-                <a href="/blue.html">
-                    <img src="/kurthaimages/blue1.1.webp" alt="Samsung Smartwatch" />
-                    <p class="product-name">BLUE KURTHA</p>
-                    <p class="product-price">
-                        ₹799 <span class="discount-price">₹2500</span>
-                    </p>
-                    <p class="product-rating">Rating: 3.0</p>
-                    <p class="product-display">Flared</p>
-                </a>
-            </div>
-
-            <div class="product-card" data-price="999" data-rating="4.0" data-display="Redmi">
-                <div class="icons">
-                    <button class="favorite-button" id="favoriteButton1">&#9825;</button>                     
-                    <a href="#" title="Add to Cart">&#128722;</a>
-                </div>
-                <a href="/boAt-bluetooth.html">
-                    <img src="Bluetooth Images/boAt.jpg" alt="Samsung Smartwatch" />
-                    <p class="product-name">boAt Rockerz 255 Pro+ Bluetooth</p>
-                    <p class="product-price">
-                        ₹999 <span class="discount-price">₹3,990</span>
-                    </p>
-                    <p class="product-rating">Rating: 4.0</p>
-                    <p class="product-display">Display: redmi</p>
-                </a>
-            </div>
-
-            <div class="product-card" data-price="1099" data-rating="4.5" data-display="dhoti" data-discount="40">
-                <div class="icons">
-                    <button class="favorite-button" id="favoriteButton1">&#9825;</button>                     
-                    <a href="#" title="Add to Cart">&#128722;</a>
-                </div>
-                <a href="/green.html">
-                    <img src="/kurthaimages/green1.1.webp" alt="Samsung Smartwatch" />
-                    <p class="product-name">GREEN KURTHA</p>
-                    <p class="product-price">
-                        ₹1099 <span class="discount-price">₹4200</span>
-                    </p>
-                    <p class="product-rating">Rating: 4.5</p>
-                    <p class="product-display">Dhoti</p>
-                </a>
-            </div>
-
-            <div class="product-card" data-price="809" data-rating="3.9" data-display="Casual">
-                <div class="icons">
-                    <button class="favorite-button" id="favoriteButton1">&#9825;</button>                     
-                    <a href="#" title="Add to Cart">&#128722;</a>
-                </div>
-                <a href="/Bata.html">
-                    <img src="/Images/Bata Slipper.jpg" alt="Samsung Smartwatch" />
-                    <p class="product-name">Bata Mens Shrek Tr Sandals</p>
-                    <p class="product-price">
-                        ₹809 <span class="discount-price">₹899</span>
-                    </p>
-                    <p class="product-rating">Rating: 3.9</p>
-                    <p class="product-display">Display: Casual</p>
-                </a>
-            </div>
-
-            <div class="product-card" data-price="929" data-rating="4.0" data-display="Fashion Sandal">
-                <div class="icons">
-                    <button class="favorite-button" id="favoriteButton1">&#9825;</button>                     
-                    <a href="#" title="Add to Cart">&#128722;</a>
-                </div>
-                <a href="/Mochi.html">
-                    <img src="/Images/Mochi Women.jpg" alt="Samsung Smartwatch" />
-                    <p class="product-name">
-                        Mochi Women Purple Floral
-                        Slippers
-                    </p>
-                    <p class="product-price">
-                        ₹929 <span class="discount-price">₹1,690</span>
-                    </p>
-                    <p class="product-rating">Rating: 4.0</p>
-                    <p class="product-display">Display:Fashion Sandal</p>
-                </a>
-            </div>
-
-            <div class="product-card" data-price="3,999" data-rating="4.0" data-display="ROBERT FISHERMAN">
-                <div class="icons">
-                    <button class="favorite-button" id="favoriteButton1">&#9825;</button>                     
-                    <a href="#" title="Add to Cart">&#128722;</a>
-                </div>
-                <a href="/Hush.html">
-                    <img src="/Images/Hush Puppies.jpg" alt="Samsung Smartwatch" />
-                    <p class="product-name">
-                        Hush Puppies Men's Robert Fisherman Casual Shoes
-                    </p>
-                    <p class="product-price">
-                        ₹3,999 <span class="discount-price">₹0</span>
-                    </p>
-                    <p class="product-rating">Rating: 4.0</p>
-                    <p class="product-display">Display:ROBERT FISHERMAN</p>
-                </a>
-            </div>
-
-            <div class="product-card" data-price="497" data-rating="4" data-display="Elastic,Elasticated"
-                data-discount="40">
-                <div class="icons">
-                    <button class="favorite-button" id="favoriteButton1">&#9825;</button>                     
-                    <a href="#" title="Add to Cart">&#128722;</a>
-                </div>
-                <a href="/vomzer.html">
-                    <img src="/bed sheet images/VOMZER.jpg" alt="Samsung Smartwatch" />
-                    <p class="product-name">
-                        VOMZER 320 TC Cotton Feel All Around Elastic Fitted Bedsheets
-                    </p>
-                    <p class="product-price">
-                        ₹497 <span class="discount-price">₹1,499</span>
-                    </p>
-                    <p class="product-rating">Rating: 4.0</p>
-                    <p class="product-display">Elastic,Elasticated</p>
-                </a>
-            </div>
-
-            <div class="product-card" data-price="378" data-rating="4" data-display="Elastic" data-discount="50">
-                <div class="icons">
-                    <button class="favorite-button" id="favoriteButton1">&#9825;</button>                     
-                    <a href="#" title="Add to Cart">&#128722;</a>
-                </div>
-                <a href="/new leaf.html">
-                    <img src="/bed sheet images/NEW LEAF.jpg" alt="Samsung Smartwatch" />
-                    <p class="product-name">
-                        NEW LEAF Premium Cotton Elastic Fitted Bedsheets
-                    </p>
-                    <p class="product-price">
-                        ₹378 <span class="discount-price">₹1,599</span>
-                    </p>
-                    <p class="product-rating">Rating: 4.0</p>
-                    <p class="product-display">Elastic</p>
-                </a>
-            </div>
-
-            <div class="product-card" data-price="1,299" data-rating="3.8" data-display="boat">
-                <div class="icons">
-                    <button class="favorite-button" id="favoriteButton1">&#9825;</button>                     
-                    <a href="#" title="Add to Cart">&#128722;</a>
-                </div>
-                <a href="/boAt Airdopes-bluetooth.html">
-                    <img src="Bluetooth Images/boAt Airdopes.jpg" alt="Samsung Smartwatch" />
-                    <p class="product-name">boAt Airdopes 141 Bluetooth</p>
-                    <p class="product-price">
-                        ₹1,299 <span class="discount-price">₹4,490</span>
-                    </p>
-                    <p class="product-rating">Rating: 3.8</p>
-                    <p class="product-display">Display: boat</p>
-                </a>
-            </div>
-
-            <div class="product-card" data-price="2,499" data-rating="4.1" data-display="Realme">
-                <div class="icons">
-                    <button class="favorite-button" id="favoriteButton1">&#9825;</button>                     
-                    <a href="#" title="Add to Cart">&#128722;</a>
-                </div>
-                <a href="/realme Buds-bluetooth.html">
-                    <img src="Bluetooth Images/realme Buds.jpg" alt="Samsung Smartwatch" />
-                    <p class="product-name">realme Buds T310 Truly Wireless</p>
-                    <p class="product-price">
-                        ₹2,499<span class="discount-price">₹3,999</span>
-                    </p>
-                    <p class="product-rating">Rating: 4.1</p>
-                    <p class="product-display">Display: realme</p>
-                </a>
-            </div>
-        </div> -->
-
         <div class="product-grid">
 
             <div class="product-card" th:each="product : ${products}">
                 <a th:href="@{/products/{id}(id=${product.productId})}">
                     <img th:src="@{/products/image/{id}(id=${product.productId})}" alt="Product Image">
-                    <p class="product-name" th:text="${product.name}">Product Name</p>
+                    <p class="product-name" th:text="${#strings.length(product.name) > 20} ? ${#strings.substring(product.name,0,20) + '...'} : ${product.name}"></p>
                     <p class="product-price" th:text="'₹ '+${product.price}"><span class="discount-price"></span></p>
                     <p class="product-rating" th:text="'Rating: '+${product.rating}"></p>
                     <p class="product-display" th:text="'Display: '+${product.display}"></p>

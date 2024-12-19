@@ -90,6 +90,7 @@ public class HomeController {
         return "/Tourism/AlluriSitharamaRaju/ArakuValley";
     }
 
+
     @GetMapping("/Tourism/AlluriSitharamaRaju/BorraCaves")
     public String getBorraCaves() {
         return "/Tourism/AlluriSitharamaRaju/BorraCaves";
@@ -772,6 +773,16 @@ public class HomeController {
     @GetMapping("/Tourism/Guntur/Amaravathi")
     public String getAmaravathi() {
         return "Tourism/Guntur/Amaravathi";
+    }
+
+    @GetMapping("/Tourism/Guntur/Mangalagiri_Narasimha_Swamy_Temple")
+    public String getMangalagiri_Narasimha_Swamy_TempleString() {
+        return "Tourism/Guntur/Mangalagiri_Narasimha_Swamy_Temple";
+    }
+
+    @GetMapping("/Tourism/Guntur/Uppalapadu_Bird_Sanctuary")
+    public String getUppalapadu_Bird_Sanctuary() {
+        return "Tourism/Guntur/Uppalapadu_Bird_Sanctuary";
     }
 
     @GetMapping("/Tourism/Guntur/Kondaveedu")

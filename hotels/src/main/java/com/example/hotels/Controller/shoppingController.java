@@ -375,6 +375,27 @@ public class shoppingController {
         return "shirts";
     }
 
+    @GetMapping("/haier-products")
+    public String haierProducts(Model model) {
+        Long haierBrandId = 39L;
+        model.addAttribute("products", productRepository.findByBrandId(haierBrandId));
+        return "shirts";
+    }
+
+    @GetMapping("/tcl-products")
+    public String tclProducts(Model model) {
+        Long tclBrandId = 38L;
+        model.addAttribute("products", productRepository.findByBrandId(tclBrandId));
+        return "shirts";
+    }
+
+    @GetMapping("/panasonic-products")
+    public String panasonicProducts(Model model) {
+        Long panasonicBrandId = 40L;
+        model.addAttribute("products", productRepository.findByBrandId(panasonicBrandId));
+        return "shirts";
+    }
+
     @GetMapping("/summary/{productId}")
     public String summaryOfProducts(@PathVariable Long productId, Model model) {
         Product product = productRepository.findById(productId)

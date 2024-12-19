@@ -28,10 +28,10 @@
             <div class="nav_links_placeholder">
                 <ul class="nav_links">
                     <li class="nav_link active">
-                        <a href="/"><span>Home</span></a>
+                        <a href="/mycity-homepage"><span>Home</span></a>
                     </li>
                     <li class="nav_link">
-                        <a href="/entertainment"><span>Entertainment</span></a>
+                        <a href="/Entertainment/home"><span>Entertainment</span></a>
                     </li>
                     <li class="nav_link">
                         <a href="homePage"><span>Shopping</span></a>
@@ -162,7 +162,8 @@
             <div class="product-card" th:each="product : ${products}" th:attr="data-rating=${product.rating}">
                 <a th:href="@{/products/{id}(id=${product.productId})}">
                     <img th:src="@{/products/image/{id}(id=${product.productId})}" alt="Product Image">
-                    <p class="product-name" th:text="${product.name}"></p>
+                    <!-- <p class="product-name" th:text="${product.name}"></p> -->
+                    <p class="product-name" th:text="${#strings.length(product.name) > 20} ? ${#strings.substring(product.name,0,20) + '...'} : ${product.name}"></p>
                     <p class="product-price" th:text="'₹ '+${product.price}"><span class="discount-price"></span></p>
                     <p class="product-rating" th:text="'Rating: '+${product.rating}"></p>
                     <p class="product-display" th:text="'Display: '+${product.display}"></p>

@@ -292,15 +292,15 @@ ul {
                         <a href="/mycity-homepage"><span>Home</span></a>
                     </li>
                     <li class="nav_link">
-                        <a href="/entertainment"><span>Entertainment</span></a>
+                        <a href="/Entertainment/home"><span>Entertainment</span></a>
                     </li>
-                    <li class="nav_link">
+                    <li class="nav_link active">
                         <a href="/homePage"><span>Shopping</span></a>
                     </li>
                     <li class="nav_link">
                         <a href="/tourism"><span>Tourism</span></a>
                     </li>
-                    <li class="nav_link active">
+                    <li class="nav_link">
                         <a href="/beauty"><span>Pay Bills</span></a>
                     </li>
                     <li class="nav_link">
@@ -352,14 +352,14 @@ ul {
                             </div>
                             <div class="quantity-controls">
                                 <a th:href="@{/cart/decrease/{cartItemId}(cartItemId=${item.cartId})}" 
-                                   class="quantity-btn">-</a>
+                                   class="quantity-btn" style="text-decoration: none;">-</a>
                                 <span class="quantity-value" th:text="${item.quantity}"></span>
                                 <a th:href="@{/cart/increase/{cartItemId}(cartItemId=${item.cartId})}" 
-                                   class="quantity-btn">+</a>
+                                   class="quantity-btn" style="text-decoration: none;">+</a>
                             </div>
                             <div class="item-total" th:text="'₹' + (${item.quantity} * ${item.product.price})"></div>
                             <a th:href="@{/cart/delete/{cartItemId}(cartItemId=${item.cartId})}" 
-                               class="remove-btn">×</a>
+                               class="remove-btn" style="text-decoration: none;">×</a>
                         </div>
                     </div>
                     <div class="cart-footer" th:if="${!cartItems.empty}">
@@ -367,7 +367,7 @@ ul {
                             <span class="total-label">Total Amount</span>
                             <span class="total-amount" th:text="'₹' + ${totalAmount}"></span>
                         </div>
-                        <a href="/checkout" class="checkout-btn">Continue to Payment</a>
+                        <a href="/checkout" class="checkout-btn" style="text-decoration: none;">Continue to Payment</a>
                     </div>
                 </div>
             </div>

@@ -228,12 +228,10 @@
                                         <div class="roomFeature">
                                             <img src="/icons/bed.svg" alt="tv" class="icons">
                                             <p>
-                                                <span
-                                                    th:text="${room.maxGuests == 1 ? 'Single Bed' : 
-                                                                room.maxGuests == 2 ? 'Double Bed' : 
-                                                                room.maxGuests == 3 ? 'Queen Bed' : 
-                                                                (room.maxGuests >= 4 && room.maxGuests <= 6) ? 'King Bed' : 'Invalid Guests'}">
-                                                </span>
+                                                <span th:text="${room.maxGuests == 1 || room.maxGuests == 2 ? 'Single Bed' : 
+                                                (room.maxGuests >= 3 && room.maxGuests <= 6) ? 'Double Bed' : 
+                                                'Invalid Guests'}">
+                                                          </span>
                                             </p>
 
                                         </div>
@@ -344,26 +342,26 @@
     <script type="module" th:src="@{/JS/hotels.js}"></script>
     <script>
         //map
-document.getElementById("viewMapBtn").addEventListener("click", function(e) {
-    e.preventDefault();  // Prevent default link behavior
-    var modal = document.getElementById("mapModal");
-    var iframe = document.getElementById("modalMap");
+        document.getElementById("viewMapBtn").addEventListener("click", function (e) {
+            e.preventDefault();  // Prevent default link behavior
+            var modal = document.getElementById("mapModal");
+            var iframe = document.getElementById("modalMap");
 
-    // Set the iframe's source to the map link from the current page
-    iframe.src = document.querySelector("iframe").src;
+            // Set the iframe's source to the map link from the current page
+            iframe.src = document.querySelector("iframe").src;
 
-    // Show the modal
-    modal.style.display = "block";
-});
+            // Show the modal
+            modal.style.display = "block";
+        });
 
-document.getElementById("closeModalBtn").addEventListener("click", function() {
-    var modal = document.getElementById("mapModal");
-    var iframe = document.getElementById("modalMap");
+        document.getElementById("closeModalBtn").addEventListener("click", function () {
+            var modal = document.getElementById("mapModal");
+            var iframe = document.getElementById("modalMap");
 
-    // Close the modal and clear the iframe src to stop the map from continuing to load
-    modal.style.display = "none";
-    iframe.src = "";
-});
+            // Close the modal and clear the iframe src to stop the map from continuing to load
+            modal.style.display = "none";
+            iframe.src = "";
+        });
 
 
 

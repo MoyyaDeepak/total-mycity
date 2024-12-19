@@ -144,6 +144,20 @@ public class shoppingController {
         return "shirts";
     }
 
+    @GetMapping("/womens-footwear")
+    public String womensFootwear(Model model) {
+        Long womensFootwearCategoryId = 39L;
+        model.addAttribute("products", productRepository.findByCategoryId(womensFootwearCategoryId));
+        return "shirts";
+    }
+    
+    @GetMapping("/womens-kurta-set")
+    public String womensKurta(Model model) {
+        Long womensKurtaCategoryId = 38L;
+        model.addAttribute("products", productRepository.findByCategoryId(womensKurtaCategoryId));
+        return "shirts";
+    }
+
     @GetMapping("/doormates")
     public String doorMates(Model model) {
         Long doormatesCatgegoryId = 15L;
@@ -200,7 +214,7 @@ public class shoppingController {
         return "shirts";
     }
 
-    @GetMapping("/blankets")
+    @GetMapping("/kids-blankets")
     public String kidsblankets(Model model) {
         Long kidsblanketsCatgegoryId = 31L;
         model.addAttribute("products", productRepository.findByCategoryId(kidsblanketsCatgegoryId));

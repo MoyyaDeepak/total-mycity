@@ -1104,12 +1104,12 @@
 
   </div>
 
-  <div class="similar-products">
+  <div class="similar-products" style="margin-left: 50px;">
     <h3>You Might Also Like</h3>
     <div class="product-grid">
 
       <div class="product-card" th:each="product : ${products}">
-        <a th:href="@{/products/{id}(id=${product.productId})}">
+        <a th:href="@{/products/{id}(id=${product.productId})}" style="text-decoration: none;">
           <img th:src="@{/products/image/{id}(id=${product.productId})}" alt="Product Image">
           <p class="product-name" th:text="${product.name}"></p>
           <p class="product-price" th:text="'₹ '+${product.price}"><span class="discount-price"></span></p>

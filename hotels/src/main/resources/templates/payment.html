@@ -104,7 +104,7 @@
             <form action="/api/payment/create-order/{productId}(productId=${product.productId})" method="POST" id="payment-form">
               <input type="hidden" name="orderId" value="${orderId}" />
               <input type="hidden" name="amount" value="${product.price}" />
-              <button type="button" id="pay-button">Save & Deliver</button>
+              <button type="button" id="pay-button" class="btn-orange btn">Save & Deliver</button>
           </form>
             <a th:href="@{/summary/{productId}(productId=${product.productId})}">
               <button type="button" class="btn">Cancel</button>

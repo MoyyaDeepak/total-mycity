@@ -249,6 +249,7 @@ public class ShoppingAdminController {
             product.setSpecifications(productDto.getSpecifications());
             product.setHighlights(productDto.getHighlights());
             product.setPrice(productDto.getPrice());
+            product.setPrice(productDto.getOriginalPrice());
             product.setStock(productDto.getStock());
             product.setDisplay(productDto.getDisplay());
             product.setRating(productDto.getRating());
@@ -281,6 +282,7 @@ public class ShoppingAdminController {
         productDto.setSpecifications(product.getSpecifications());
         productDto.setHighlights(product.getHighlights());
         productDto.setPrice(product.getPrice());
+        productDto.setPrice(product.getOriginalPrice());
         productDto.setDisplay(product.getDisplay());
         productDto.setRating(product.getRating());
         productDto.setStock(product.getStock());
@@ -310,6 +312,7 @@ public class ShoppingAdminController {
             product.setSpecifications(productDto.getSpecifications());
             product.setHighlights(productDto.getHighlights());
             product.setPrice(productDto.getPrice());
+            product.setPrice(productDto.getOriginalPrice());
             product.setDisplay(productDto.getDisplay());
             product.setRating(productDto.getRating());
             product.setStock(productDto.getStock());

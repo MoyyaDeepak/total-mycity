@@ -186,6 +186,27 @@ public class shoppingController {
         return "shirts";
     }
 
+    @GetMapping("/toys")
+    public String toys(Model model) {
+        Long toysCatgegoryId = 24L;
+        model.addAttribute("products", productRepository.findByCategoryId(toysCatgegoryId));
+        return "shirts";
+    }
+
+    @GetMapping("/kids-footwear")
+    public String kidsFootwear(Model model) {
+        Long kidsFootwearCatgegoryId = 30L;
+        model.addAttribute("products", productRepository.findByCategoryId(kidsFootwearCatgegoryId));
+        return "shirts";
+    }
+
+    @GetMapping("/blankets")
+    public String kidsblankets(Model model) {
+        Long kidsblanketsCatgegoryId = 31L;
+        model.addAttribute("products", productRepository.findByCategoryId(kidsblanketsCatgegoryId));
+        return "shirts";
+    }
+
     @GetMapping("/curtains")
     public String curtains(Model model) {
         Long curtainsCatgegoryId = 20L;
@@ -204,6 +225,20 @@ public class shoppingController {
     public String bangles(Model model) {
         Long banglesCatgegoryId = 22L;
         model.addAttribute("products", productRepository.findByCategoryId(banglesCatgegoryId));
+        return "shirts";
+    }
+
+    @GetMapping("/jewellery-set")
+    public String jewelleyset(Model model) {
+        Long jewellerysetCatgegoryId = 32L;
+        model.addAttribute("products", productRepository.findByCategoryId(jewellerysetCatgegoryId));
+        return "shirts";
+    }
+
+    @GetMapping("/anklets")
+    public String anklets(Model model) {
+        Long ankletsCatgegoryId = 33L;
+        model.addAttribute("products", productRepository.findByCategoryId(ankletsCatgegoryId));
         return "shirts";
     }
 
@@ -253,6 +288,90 @@ public class shoppingController {
     public String boatProducts(Model model) {
         Long boatBrandId = 11L;
         model.addAttribute("products", productRepository.findByBrandId(boatBrandId));
+        return "shirts";
+    }
+
+    @GetMapping("/jbl-products")
+    public String jblProducts(Model model) {
+        Long jblBrandId = 25L;
+        model.addAttribute("products", productRepository.findByBrandId(jblBrandId));
+        return "shirts";
+    }
+
+    @GetMapping("/sennheiser-products")
+    public String sennheiserProducts(Model model) {
+        Long sennheiserBrandId = 27L;
+        model.addAttribute("products", productRepository.findByBrandId(sennheiserBrandId));
+        return "shirts";
+    }
+
+    @GetMapping("/bose-products")
+    public String boseProducts(Model model) {
+        Long boseBrandId = 26L;
+        model.addAttribute("products", productRepository.findByBrandId(boseBrandId));
+        return "shirts";
+    }
+
+    @GetMapping("/sandisk-products")
+    public String sandiskProducts(Model model) {
+        Long sandiskBrandId = 29L;
+        model.addAttribute("products", productRepository.findByBrandId(sandiskBrandId));
+        return "shirts";
+    }
+
+    @GetMapping("/kingston-products")
+    public String kingstonProducts(Model model) {
+        Long kingstonBrandId = 28L;
+        model.addAttribute("products", productRepository.findByBrandId(kingstonBrandId));
+        return "shirts";
+    }
+
+    @GetMapping("/corsair-products")
+    public String corsairProducts(Model model) {
+        Long corsairBrandId = 30L;
+        model.addAttribute("products", productRepository.findByBrandId(corsairBrandId));
+        return "shirts";
+    }
+
+    @GetMapping("/seagate-products")
+    public String seagateProducts(Model model) {
+        Long seagateBrandId = 31L;
+        model.addAttribute("products", productRepository.findByBrandId(seagateBrandId));
+        return "shirts";
+    }
+
+    @GetMapping("/hp-products")
+    public String hpProducts(Model model) {
+        Long hpBrandId = 32L;
+        model.addAttribute("products", productRepository.findByBrandId(hpBrandId));
+        return "shirts";
+    }
+
+    @GetMapping("/dell-products")
+    public String dellProducts(Model model) {
+        Long dellBrandId = 33L;
+        model.addAttribute("products", productRepository.findByBrandId(dellBrandId));
+        return "shirts";
+    }
+
+    @GetMapping("/lenovo-products")
+    public String lenovoProducts(Model model) {
+        Long lenovoBrandId = 34L;
+        model.addAttribute("products", productRepository.findByBrandId(lenovoBrandId));
+        return "shirts";
+    }
+
+    @GetMapping("/asus-products")
+    public String asusProducts(Model model) {
+        Long asusBrandId = 35L;
+        model.addAttribute("products", productRepository.findByBrandId(asusBrandId));
+        return "shirts";
+    }
+
+    @GetMapping("/lg-products")
+    public String lgProducts(Model model) {
+        Long lgBrandId = 36L;
+        model.addAttribute("products", productRepository.findByBrandId(lgBrandId));
         return "shirts";
     }
 

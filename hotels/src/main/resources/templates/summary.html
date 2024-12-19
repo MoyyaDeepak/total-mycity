@@ -29,7 +29,7 @@
       <div class="nav_links_placeholder">
         <ul class="nav_links">
           <li class="nav_link">
-            <a href="/"><span>Home</span></a>
+            <a href="/mycity-homepage"><span>Home</span></a>
           </li>
           <li class="nav_link">
             <a href="/entertainment"><span>Entertainment</span></a>
@@ -92,11 +92,12 @@
         <form th:action="@{/payment/{productId}/details(productId=${product.productId})}" method="GET">
           <input type="hidden" name="quantity" id="quantity-input" value="1">
           <button type="submit" class="btn btn-orange">Continue</button>
+          <a th:href="@{/products/{id}(id=${product.productId})}">
+            <button type="button" class="btn btn-orange">Cancel</button>
+          </a>
         </form>
 
-        <a th:href="@{/products/{id}(id=${product.productId})}">
-          <button type="button" class="btn btn-orange">Cancel</button>
-        </a>
+        
       </div>
     </div>
   </div>
